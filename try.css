@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+body{
+	background: url(about.jpg);
+	background-color: lightblue;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	background-blend-mode: multiply;
+}
+
+
+/*Nav Container Styling*/
+
+nav{
+
+	background: white;
+	box-shadow: 3px 3px 5px lightgray;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	position: relative;
+}
+
+nav h1{
+	position: absolute;
+	left: 10px;
+}
+
+nav h1::before{
+	content: '';
+	background-color: red;
+	display: block;
+	width: auto;
+	height: 5px;
+}
+
+nav h1::after{
+	content: '';
+	background-color: red;
+	display: block;
+	width: auto;
+	height: 5px;
+}
+
+
+nav .icon{
+	position: absolute;
+	right: 20px;
+}
+
+
+/*Nav INFORMATION Styling*/
+
+.nav-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.nav-info ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	height: 50px;
+	gap: 20px;
+}
+
+
+.nav-info a{
+	text-decoration: none;
+	color: black;
+	height: 25px;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	padding: 5px;
+	border-radius: 4px;
+	transition: 0.5s ease;
+	font-weight: bold;
+}
+
+.nav-info a:hover{
+	background: black;
+	color: white;
+	transform: scale(1.4);
+	margin: 3px;
+}
+
+
+
+/*Nav ICONS Styling*/
+
+
+.icon{
+	display: flex;
+	gap: 20px;
+}
+
+.icon i{
+	color: black;
+	font-weight: bold;
+	color: black;
+}
+
+.icon i:hover{
+	color: red;
+	background: white;
+}
+
+
+/*SIDE Images STYLING HOVER*/
+
+.container{
+	position: relative;
+	height: 90%;
+	margin: 10px 15px;
+}
+
+.mini:nth-child(1){
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 33.3%;
+	border: 3px solid white;
+	box-shadow: 3px 3px 5px lightgray;
+	background: url(washington.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.2;
+	transition: 0.5s ease-out;
+}
+
+.mini:nth-child(2){
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 33.3%;
+	border: 3px solid white;
+	box-shadow: 3px 3px 5px lightgray;
+	background: url(newyork.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.2;
+	transition: 0.5s ease-out;
+}
+
+.mini{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mini:hover{
+	opacity: 10;
+	transform: scale(1.0);
+	margin: 4px;
+}
+
+.text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+.text h4{
+	padding: 10px;
+	transition: 0.5s ease-out;
+	border-radius: 5px;
+}
+
+
+
+.text h4:hover{
+	background-color: black;
+	color: white;
+
+}
+
+.ton{
+
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	height: 100%;
+}
+
+button{
+	padding: 0 10px;
+	background-color: #0096c7;
+	font-weight: bold;
+	font-stretch: 2px;
+	width: 90px;
+	border-radius: 5px;
+	border: none;
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+}
+
+.container .limit{
+	text-align: center;
+	margin: 15px auto;
+	font-size: 15px;
+	color: #495057;
+}
+
+
+.container2{
+	background: url(banner.jpg);
+}
